@@ -1,0 +1,68 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": 2,
+      "x": 0,
+      "y": 4
+    },
+    {
+      "id": 3,
+      "x": 4,
+      "y": 4
+    }
+  ],
+  "elements": [
+    {
+      "id": 1,
+      "n1": 1,
+      "n2": 2,
+      "sectionId": 1
+    },
+    {
+      "id": 2,
+      "n1": 2,
+      "n2": 3,
+      "sectionId": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "混凝土梁截面",
+      "E": 30000000,
+      "A": 0.12,
+      "I": 0.004
+    },
+    {
+      "id": 2,
+      "name": "钢管截面",
+      "E": 206000000,
+      "A": 0.015,
+      "I": 0.0002
+    }
+  ],
+  "nodalLoads": [],
+  "elementLoads": [
+    {
+      "id": 1767234282125,
+      "elementId": 2,
+      "type": "uniform",
+      "val1": 10
+    }
+  ],
+  "supports": [
+    {
+      "nodeId": 3,
+      "type": "pinned"
+    },
+    {
+      "nodeId": 1,
+      "type": "fixed"
+    }
+  ]
+}
